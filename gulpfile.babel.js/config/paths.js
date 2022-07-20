@@ -49,9 +49,16 @@ export default {
     ]
   },
 
-  copy: {
+  copyFavicon: {
     src: pathSrc + '/favicon/**/*.*',
     dest: pathDest + '/favicon',
     watch: pathSrc + '/favicon/**/*.*'
+  },
+
+  copyVideo: {
+    src: pathSrc + '/video/**/*.*',
+    dest: pathDest + '/video',
+    watch: pathSrc + '/video/**/*.*'
   }
+
 };

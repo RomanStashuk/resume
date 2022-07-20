@@ -30,7 +30,6 @@
     "declaration-no-important": true,
     "number-leading-zero": "always",
     "function-url-quotes": "always",
-    "at-rule-empty-line-before": "always",
     "rule-empty-line-before": "always",
     "selector-pseudo-element-colon-notation": "double",
     "media-feature-range-operator-space-before": "always",
