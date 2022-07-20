@@ -1,0 +1,113 @@
+.main-nav {
+  width: 100%;
+  margin: auto;
+}
+
+.main-nav__toggle {
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  border: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+
+  &::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: $text-color--light;
+    top: 23px;
+    right: 20px;
+    box-shadow:
+      0 10px 0 0 $text-color--light,
+      0 20px 0 0 $text-color--light;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+
+  @include for-phone-only {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 34px;
+    right: 23px;
+    display: block;
+    background-color: $text-color--light;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+  @include for-tablet {
+    padding-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: $text-color--light;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include for-tablet {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.main-nav__link[href] {
+  @media (pointer: fine) {
+    &:hover,
+    &:focus {
+      font-weight: 500;
+      color: $main-color;
+    }
+  }
+}
