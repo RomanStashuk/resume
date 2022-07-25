@@ -1,6 +1,11 @@
 .main-nav {
   width: 100%;
   margin: auto;
+
+  @include for-tablet {
+    width: initial;
+    margin-right: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -31,17 +36,16 @@
     width: 30px;
     height: 3px;
     position: absolute;
-    background-color: $text-color--light;
+    background-color: $white--light;
     top: 23px;
-    right: 20px;
+    right: 16px;
     box-shadow:
-      0 10px 0 0 $text-color--light,
-      0 20px 0 0 $text-color--light;
+      0 10px 0 0 $white--light,
+      0 20px 0 0 $white--light;
   }
 }
 
 .main-nav--closed .main-nav__list {
-
   @include for-phone-only {
     display: none;
   }
@@ -58,7 +62,7 @@
     top: 34px;
     right: 23px;
     display: block;
-    background-color: $text-color--light;
+    background-color: $main-color;
   }
 
   &::before {
@@ -72,18 +76,25 @@
 
 .main-nav__list {
   display: flex;
+  width: 100%;
   margin: 0;
-  padding: 0;
-  padding-top: 10px;
+  padding: 0 0 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   list-style: none;
 
   @include for-tablet {
-    padding-top: 0;
+    width: initial;
+    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.main-nav__item:last-child .main-nav__link {
+  @include for-tablet {
+    padding-right: 0;
   }
 }
 
@@ -92,22 +103,28 @@
   padding: 20px;
   font-size: 18px;
   font-weight: 400;
-  color: $text-color--light;
+  color: $white--light;
   text-transform: uppercase;
   text-decoration: none;
+  transition-duration: 0.3s;
 
   @include for-tablet {
-    font-size: 16px;
+    padding: 10px 20px;
     font-weight: 300;
   }
 }
 
 .main-nav__link[href] {
   @media (pointer: fine) {
+
     &:hover,
     &:focus {
       font-weight: 500;
       color: $main-color;
+    }
+
+    &:active {
+      opacity: 0.8;
     }
   }
 }

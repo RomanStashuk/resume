@@ -1,0 +1,92 @@
+.about-me {
+  display: flex;
+  padding: 20px;
+  padding-bottom: 4px;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  color: $gray--dark;
+  background-color: rgba($white--light, 0.96);
+  backdrop-filter: blur(15px);
+
+  @include for-tablet {
+    padding: 24px;
+    padding-bottom: 8px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  @include for-desktop-up {
+    padding: 30px;
+    padding-bottom: 14px;
+  }
+}
+
+.about-me__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include for-tablet {
+    width: calc(50% - 10px);
+    align-items: flex-start;
+  }
+}
+
+.about-me__description {
+  margin: 24px 0 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gray--light;
+
+  @include for-tablet {
+    margin-top: 30px;
+    padding: 0;
+    padding-right: 24px;
+    border-bottom: none;
+  }
+}
+
+.about-me__list {
+  width: 100%;
+  margin: 24px 0 0;
+
+  @include for-tablet {
+    margin-top: 0;
+    width: calc(50% - 10px);
+  }
+}
+
+.about-me__list-item {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 2px solid $main-color;
+
+  @include for-tablet {
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-me__list-name {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: $main-color;
+}
+
+.about-me__list-value {
+  margin: 0;
+}
+
+.about-me__list-icon {
+  margin-right: 10px;
+  fill: $gray;
+}
+
+.about-me__contacts {
+  margin-top: 30px;
+}

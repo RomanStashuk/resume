@@ -1,0 +1,8 @@
+.page-body {
+  display: grid;
+  min-width: 320px;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  background: url('../img/background.png') top center / cover no-repeat #0b020d;
+}

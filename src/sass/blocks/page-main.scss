@@ -1,0 +1,48 @@
+.page-main {
+  width: 100%;
+  max-width: $desktop-width;
+}
+
+.page-main__wrapper {
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+
+  @include for-tablet {
+    margin: 20px 0;
+    flex-direction: row;
+  }
+}
+
+.page-main__main-info {
+  margin-bottom: 10px;
+
+  @include for-tablet {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.page-main__skills {
+  margin-bottom: 10px;
+
+  @include for-tablet {
+    margin-bottom: 20px;
+  }
+}
+
+.page-main__education {
+  margin-bottom: 10px;
+
+  @include for-tablet {
+    margin-bottom: 20px;
+  }
+}
+
+.page-main__projects {
+  margin-bottom: 10px;
+
+  @include for-tablet {
+    margin-bottom: 20px;
+  }
+}

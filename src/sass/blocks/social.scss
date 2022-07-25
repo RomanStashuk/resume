@@ -1,0 +1,56 @@
+.social {
+  display: flex;
+  margin: 0 0 initial;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 12px;
+}
+
+.social__link {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  color: $white--light;
+  border-bottom: 4px solid $white--light;
+  background-color: $main-color;
+  transition-duration: 0.3s;
+
+  @include for-tablet {
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (pointer: fine) {
+
+    &:hover,
+    &:focus {
+      background-color: $white--light;
+      color: $main-color;
+      border-bottom: 4px solid $main-color;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+.social__icon {
+  margin: auto;
+
+  @include for-tablet {
+
+    &--gh {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--tg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
