@@ -17,9 +17,275 @@
   <meta name="theme-color" content="#8ec051">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
-
+    <div class="container">
+      <svg class="page-header__icon" width="40" height="40" aria-hidden="true" focusable="false">
+        <use xlink:href="img/icons/sprite.svg#code"/>
+      </svg>
+      <p class="page-header__name"><span>Roman&nbsp;&nbsp;</span>Stashuk</p>
+      <nav class="page-header__nav  main-nav  main-nav__closed  main-nav--nojs  container">
+        <button class="main-nav__toggle" type="button" aria-label="Відкрити меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#about-me" class="main-nav__link">Про мене</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#skills" class="main-nav__link">Навички</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#education" class="main-nav__link">Освіта</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#projects" class="main-nav__link">Проєкти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <main class="page-main  container">
+
+    <div class="page-main__wrapper">
+      <section class="main-info  page-main__main-info">
+        <div class="main-info__image-wrap">
+          <img src="img/cv-photo.jpg" width="280" height="300" alt="Фото зі мною" class="main-info__photo">
+        </div>
+        <h1 class="main-info__title">Сташук Роман<br><span class="colored-text">Frontend developer</span></h1>
+        <a class="main-info__link  main-info__link--download" href="#">Завантажити резюме (PDF)
+          <svg class="main-info__icon" width="20" height="20" aria-hidden="true" focusable="false">
+            <use xlink:href="img/icons/sprite.svg#download"/>
+          </svg>
+        </a>
+      </section>
+
+      <section class="about-me  page-main__about-me" id="about-me">
+        <div class="about-me__wrapper">
+          <h2 class="section-title">Про мене</h2>
+          <p class="about-me__description"><span class="colored-text">Привіт,</span> мене звати Роман.<br> На даний момент я&nbsp;вивчаю та&nbsp;практикую Frontend розробку.<br>Шукаю можливість приєднатись до&nbsp;дружньої та&nbsp;професійної команди для подальшої співпраці та розвитку.</p>
+        </div>
+
+        <dl class="about-me__list">
+          <div class="about-me__list-item">
+            <dt class="about-me__list-name">
+              <svg class="about-me__list-icon" width="18" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#user"/>
+              </svg>
+              П. І. Б.
+            </dt>
+            <dd class="about-me__list-value">Сташук Роман Сергійович</dd>
+          </div>
+          <div class="about-me__list-item">
+            <dt class="about-me__list-name">
+              <svg class="about-me__list-icon" width="18" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#birthday"/>
+              </svg>
+              Дата народження
+            </dt>
+            <dd class="about-me__list-value">12 листопада 1998 р.</dd>
+          </div>
+          <div class="about-me__list-item">
+            <dt class="about-me__list-name">
+              <svg class="about-me__list-icon" width="18" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#location"/>
+              </svg>
+              Адреса
+            </dt>
+            <dd class="about-me__list-value">Україна, м. Луцьк<br>(Готовий до релокейту)</dd>
+          </div>
+        </dl>
+
+        <div class="about-me__contacts contacts">
+          <dl class="contacts__list">
+            <div class="contacts__item">
+              <dt class="contacts__name">Телефон</dt>
+              <dd class="contacts__value">
+                <a href="tel:+380932357143" class="contacts__link">
+                  <svg class="contacts__icon  contacts__icon--tel" width="18" height="18" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/icons/sprite.svg#phone"/>
+                  </svg>
+                  +380 93 235 71 43</a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__name">Email</dt>
+              <dd class="contacts__value">
+                <a href="mailto:romanstashuk1@gmail.com" class="contacts__link">
+                  <svg class="contacts__icon  contacts__icon--email" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/icons/sprite.svg#gmail"/>
+                  </svg>
+                  romanstashuk1@gmail.com</a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__name">Telegram</dt>
+              <dd class="contacts__value">
+                <a href="https://t.me/romanstashuk" class="contacts__link">
+                  <svg class="contacts__icon  contacts__icon--tg" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/icons/sprite.svg#telegram"/>
+                  </svg>
+                  @romanstashuk</a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__name">GitHub</dt>
+              <dd class="contacts__value">
+                <a href="https://github.com/RomanStashuk" class="contacts__link">
+                  <svg class="contacts__icon  contacts__icon--gh" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/icons/sprite.svg#github"/>
+                  </svg>
+                  RomanStashuk</a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__name">LinkedIn</dt>
+              <dd class="contacts__value">
+                <a href="romanstashuk" class="contacts__link">
+                  <svg class="contacts__icon  contacts__icon--li" width="26" height="26" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/icons/sprite.svg#linkedin"/>
+                  </svg>
+                  RomanStashuk</a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__name">Viber</dt>
+              <dd class="contacts__value">
+                <a href="romanstashuk" class="contacts__link">
+                  <svg class="contacts__icon  contacts__icon--vb" width="22" height="22" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/icons/sprite.svg#viber"/>
+                  </svg>
+                  Roman Stashuk</a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </div>
+
+    <section class="skills  page-main__skills" id="skills">
+      <h2 class="section-title  skills__section-title">Навички</h2>
+      <div class="skills__list-wrap">
+        <h3 class="skills__title">Hard</h3>
+        <ul class="skills__list">
+          <li class="skills__item">Робота з графічними редакторами (Photoshop, Figma, Avocode)</li>
+          <li class="skills__item">HTML5, CSS3<li>
+          <li class="skills__item">CSS препроцесори (Sass, Less)</li>
+          <li class="skills__item">Методологія БЕМ</li>
+          <li class="skills__item">Крос-браузерна, адаптивна, валідна, семантична, доступна верстка</li>
+          <li class="skills__item">JS (ES6+)</li>
+          <li class="skills__item">Gulp</li>
+          <li class="skills__item">Node.JS, npm</li>
+          <li class="skills__item">Робота з консоллю</li>
+          <li class="skills__item">Git Bash, GitHub</li>
+          <li class="skills__item">SVG</li>
+        </ul>
+      </div>
+      <div class="skills__list-wrap">
+        <h3 class="skills__title">Soft</h3>
+        <ul class="skills__list">
+          <li class="skills__item">Вміння працювати в команді</li>
+          <li class="skills__item">Пунктуальність та налагоджений тайм-менеджмент</li>
+          <li class="skills__item">Прагнення розвиватись та вивчати нові технології</li>
+          <li class="skills__item">Увага до деталей та перфекціонізм</li>
+          <li class="skills__item">Відповідальність</li>
+        </ul>
+      </div>
+      <div class="skills__list-wrap">
+        <h3 class="skills__title">Знання мов</h3>
+        <ul class="skills__list">
+          <li class="skills__item">Українська: вільно</li>
+          <li class="skills__item">Російська: вільно</li>
+          <li class="skills__item">Польська: початковий</li>
+          <li class="skills__item">Англійська: вище середнього</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="education  page-main__education" id="education">
+      <h2 class="section-title">Освіта</h2>
+      <p class="education__info">Закінчив у&nbsp;2021&nbsp;році Волинський національний
+        університет імені&nbsp;Лесі&nbsp;Українки</p>
+      <dl class="education__list">
+        <div class="education__list-item">
+          <dt class="education__key">Спеціальність</dt>
+          <dd class="education__value">"Прикладна фізика та наноматеріали"</dd>
+        </div>
+        <div class="education__list-item">
+          <dt class="education__key">Ступінь вищої освіти</dt>
+          <dd class="education__value">Магістр</dd>
+        </div>
+        <div class="education__list-item">
+          <dt class="education__key">Професійна кваліфікація</dt>
+          <dd class="education__value">"Фахівець з розробки
+            приладів і&nbsp;керування технологічними процесами"</dd>
+        </div>
+        <div class="education__list-item">
+          <dt class="education__key">Додаткова інформація</dt>
+          <dd class="education__value">Диплом з відзнакою</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="projects  page-main__projects" id="projects">
+      <h2 class="section-title">Проєкти</h2>
+      <ul class="projects__list">
+        <li class="projects__item  projects__item--cat-energy">
+          <h3 class="projects__title">Cat Energy</h3>
+          <div class="projects__links">
+            <a href="https://romanstashuk.github.io/cat-energy/" class="projects__link" target="_blank">Демо</a>
+            <a href="https://github.com/RomanStashuk/cat-energy" class="projects__link" target="_blank">Вихідний код</a>
+          </div>
+        </li>
+        <li class="projects__item  projects__item--technomart">
+          <h3 class="projects__title">Техномарт</h3>
+          <div class="projects__links">
+            <a href="https://romanstashuk.github.io/technomart/" class="projects__link" target="_blank">Демо</a>
+            <a href="https://github.com/RomanStashuk/technomart" class="projects__link" target="_blank">Вихідний код</a>
+          </div>
+        </li>
+        <li class="projects__item  projects__item--gulp-template">
+          <h3 class="projects__title">Gulp start template</h3>
+          <div class="projects__links">
+            <a href="https://github.com/RomanStashuk/start-template-gulp" class="projects__link" target="_blank">Вихідний код</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <ul class="page-footer__social  social">
+        <li class="social__item">
+          <a href="#" class="social__link" aria-label="Мій профіль GitHub">
+            <svg class="social__icon  social__icon--gh" width="24" height="24" aria-hidden="true" focusable="false">
+              <use xlink:href="img/icons/sprite.svg#github"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link" aria-label="Мій профіль LinkedIn">
+            <svg class="social__icon  social__icon--li" width="26" height="26" aria-hidden="true" focusable="false">
+              <use xlink:href="img/icons/sprite.svg#linkedin"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link" aria-label="Мій профіль Telegram">
+            <svg class="social__icon  social__icon--tg" width="22" height="22" aria-hidden="true" focusable="false">
+              <use xlink:href="img/icons/sprite.svg#telegram"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright">© 2022 Roman Stashuk</p>
+      <p class="page-footer__text">Дякую, що дочитали до кінця :)</p>
+    </div>
+  </footer>
+  <video autoplay muted loop class="video-bg">
+    <source src="video/background.mp4" type="video/mp4">
+  </video>
+  <script src="js/main.js"></script>
 </body>
 </html>
