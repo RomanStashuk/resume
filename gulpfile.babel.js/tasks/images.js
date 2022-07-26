@@ -25,7 +25,20 @@ export default () => {
     .pipe(gulp.dest(path.img.dest))
     .pipe(gulp.src(path.img.src))
     .pipe(gp.newer(path.img.dest))
-    .pipe(gp.if(app.isProd, gp.imagemin(app.imagemin)))
+    .pipe(gp.if(app.isProd, gp.imagemin([
+      gp.imagemin.svgo({
+        plugins: [
+          { optimizationLevel: 3 },
+          { progessive: true },
+          { interlaced: true },
+          { removeViewBox: false },
+          { removeUselessStrokeAndFill: false },
+          { cleanupIDs: false }
+        ]
+      }),
+      gp.imagemin.gifsicle(),
+      gp.imagemin.optipng()
+    ])))
     .pipe(gulp.dest(path.img.dest))
     .pipe(browserSync.stream());
 };
