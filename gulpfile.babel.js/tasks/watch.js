@@ -12,6 +12,7 @@ import copyVideo from './copyVideo.js';
 import fonts from './fonts.js';
 import images from './images.js';
 import scripts from './scripts.js';
+import copyPdf from './copyPdf.js';
 
 // Спостереження за файлами
 export default () => {
@@ -19,6 +20,7 @@ export default () => {
   gulp.watch(path.sass.watch, sass);
   gulp.watch(path.copyFavicon.watch, copyFavicon);
   gulp.watch(path.copyVideo.watch, copyVideo);
+  gulp.watch(path.copyPdf.watch, copyPdf);
   gulp.watch(path.js.watch, scripts);
   gulp.watch(path.img.watch, images);
   gulp.watch(path.fonts.watch, fonts);

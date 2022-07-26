@@ -59,6 +59,11 @@ export default {
     src: pathSrc + '/video/**/*.*',
     dest: pathDest + '/video',
     watch: pathSrc + '/video/**/*.*'
-  }
+  },
 
+  copyPdf: {
+    src: pathSrc + '/**/*.pdf',
+    dest: pathDest,
+    watch: pathSrc + '/**/*.pdf'
+  }
 };

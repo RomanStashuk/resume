@@ -14,13 +14,14 @@ import images from './tasks/images.js';
 import scripts from './tasks/scripts.js';
 import copyFavicon from './tasks/copyFavicon.js';
 import copyVideo from './tasks/copyVideo.js';
+import copyPdf from './tasks/copyPdf.js';
 import zip from './tasks/zip.js';
 import lintspaces from './tasks/lintspaces.js';
 
 // Збирання проекту
 const build = gulp.series(
   clear,
-  gulp.parallel(html, sass, copyFavicon, copyVideo, fonts, images, scripts)
+  gulp.parallel(html, sass, copyFavicon, copyVideo, copyPdf, fonts, images, scripts)
 );
 
 const dev = gulp.series(
@@ -37,6 +38,7 @@ export {
   sass,
   copyFavicon,
   copyVideo,
+  copyPdf,
   fonts,
   images,
   scripts,
