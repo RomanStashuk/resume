@@ -104,7 +104,6 @@ composer.phar
 
 ##### Others files
 *.ai
-*.pdf
 *.psd
 .env
 
