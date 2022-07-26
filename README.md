@@ -1,4 +1,4 @@
-# [ Резюме | Сташук Роман](https://romanstashuk.github.io/resume/):link:
+# :link:[ Резюме | Сташук Роман](https://romanstashuk.github.io/resume/)
 
 ## Команди для роботи з проектом
 `npm install` – встановлення пакетів та залежностей<br><br>
