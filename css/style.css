@@ -886,6 +886,10 @@ img {
   background: url("../img/template-gulp.png") top center/cover no-repeat;
 }
 
+.projects__item--game-js {
+  background: url("../img/js-game.png") center/cover no-repeat;
+}
+
 .projects__item:hover,
 .projects__item:focus {
   justify-content: initial;
