@@ -56,6 +56,10 @@
     background: url('../img/template-gulp.png') top center / cover no-repeat;
   }
 
+  &--game-js {
+    background: url('../img/js-game.png') top center / cover no-repeat;
+  }
+
   @include for-tablet {
     padding: 30px;
   }
