@@ -1,7 +1,7 @@
 {
-  "name": "start-template-gulp",
+  "name": "Resume",
   "version": "1.0.0",
-  "description": "Стартовий шаблон для проекту на основі Gulp",
+  "description": "Моє персональне резюме",
   "main": "gulpfile.babel.js",
   "author": "RomanStashuk",
   "license": "ISC",
