@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "Моє персональне резюме",
   "main": "gulpfile.babel.js",
-  "author": "RomanStashuk",
+  "author": "RomanStashuk <romanstashuk1@gmail.com> (https://github.com/RomanStashuk)",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RomanStashuk/start-template-gulp.git"
+    "url": "git+https://github.com/RomanStashuk/resume.git"
   },
   "bugs": {
-    "url": "https://github.com/RomanStashuk/start-template-gulp/issues"
+    "url": "https://github.com/RomanStashuk/resume/issues"
   },
-  "homepage": "https://github.com/RomanStashuk/start-template-gulp#readme",
+  "homepage": "https://github.com/RomanStashuk/resume#readme",
   "scripts": {
     "start": "gulp",
     "build": "gulp --production",
