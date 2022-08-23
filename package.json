@@ -2,7 +2,7 @@
   "name": "Resume",
   "version": "1.0.0",
   "description": "Моє персональне резюме",
-  "main": "gulpfile.babel.js",
+  "private": true,
   "author": "RomanStashuk <romanstashuk1@gmail.com> (https://github.com/RomanStashuk)",
   "license": "ISC",
   "repository": {
