@@ -1,10 +1,10 @@
 {
-  "name": "Resume",
+  "name": "resume",
   "version": "1.0.0",
   "description": "Моє персональне резюме",
   "private": true,
   "author": "RomanStashuk <romanstashuk1@gmail.com> (https://github.com/RomanStashuk)",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RomanStashuk/resume.git"
