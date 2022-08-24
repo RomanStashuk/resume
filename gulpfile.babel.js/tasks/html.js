@@ -21,7 +21,6 @@ export default () => {
       }))
     }))
     .pipe(gp.fileInclude())
-    .pipe(gp.webpHtml())
     .pipe(gp.size({ title: 'HTML before' }))
     .pipe(gp.htmlmin(app.htmlmin))
     .pipe(gp.size({ title: 'HTML after' }))
