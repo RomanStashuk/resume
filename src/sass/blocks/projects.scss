@@ -64,6 +64,10 @@
     background: url("../img/guess-a-number.png") center / cover no-repeat;
   }
 
+  &--calories-counter {
+    background: url("../img/calories-counter.png") center / cover no-repeat;
+  }
+
   @include for-tablet {
     padding: 30px;
   }
