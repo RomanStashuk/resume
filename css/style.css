@@ -894,6 +894,10 @@ img {
   background: url("../img/guess-a-number.png") center/cover no-repeat;
 }
 
+.projects__item--calories-counter {
+  background: url("../img/calories-counter.png") center/cover no-repeat;
+}
+
 .projects__item:hover,
 .projects__item:focus {
   justify-content: initial;
@@ -1446,8 +1450,8 @@ img {
   }
 
   .skills {
-    padding: 40px 50px 120px;
-    margin-bottom: 20px;
+    padding: 40px 50px 50px;
+    margin-bottom: 0;
   }
 
   .skills__section-title {
